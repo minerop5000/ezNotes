@@ -14,23 +14,32 @@
   "contributes": {
     "commands": [
       {
-        "command": "eznotes.helloWorld",
-        "title": "Hello World"
+        "command": "eznotes.openDailyNote",
+        "when": "workspaceFolderCount > 0",
+        "title": "Open Daily Note"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "eznotes.openDailyNote",
+        "when": "workspaceFolderCount > 0",
+        "key": "alt+d"
       }
     ],
     "configuration": {
       "title": "ezNotes Configuration",
       "type": "object",
       "properties": {
-        "ezNotes.booleanExample": {
-          "type": "boolean",
-          "default": true,
-          "description": "Boolean Example"
-        },
-        "ezNotes.stringExample": {
+        "ezNotes.dailyNotesPath": {
           "type": "string",
-          "default": "Hello World",
-          "description": "String Example"
+          "default": "notes/{yyyy}/{MM}/{dd}.md",
+          "description": "Set Daily Notes Path",
+          "markdownDescription": "Use `{yyyy}` for year, `{MM}` for month, `{dd}` for day amd `{quarter}` for quarter."
+        },
+        "ezNotes.templatePath": {
+          "type": "string",
+          "default": ".ezNotes",
+          "description": "Template folder path for new notes"
         }
       }
     }
@@ -46,8 +55,8 @@
   "devDependencies": {
     "@types/vscode": "^1.106.1",
     "@types/mocha": "^10.0.10",
-    "@types/node": "22.x",
-    "typescript-eslint": "^8.46.3",
+    "@types/node": "24.x",
+    "typescript-eslint": "^8.47.0",
     "eslint": "^9.39.1",
     "typescript": "^5.9.3",
     "@vscode/test-cli": "^0.0.12",
