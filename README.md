@@ -16,6 +16,10 @@ This extension contributes the following settings:
 
 - `ezNotes.dailyNotesPath`: Path to store daily notes.
 - `ezNotes.templatePath`: Path to the template file for daily notes.
+  - Files used in template path:
+    - `daily.md`: Template for daily notes.
+    - `weekly.md`: Template for weekly notes.
+    - `monthly.md`: Template for monthly notes.
 
 ### Date replacement patterns
 

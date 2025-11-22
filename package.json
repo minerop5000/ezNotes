@@ -17,6 +17,16 @@
         "command": "eznotes.openDailyNote",
         "when": "workspaceFolderCount > 0",
         "title": "Open Daily Note"
+      },
+      {
+        "command": "eznotes.openWeeklyNote",
+        "when": "workspaceFolderCount > 0",
+        "title": "Open Weekly Note"
+      },
+      {
+        "command": "eznotes.openMonthlyNote",
+        "when": "workspaceFolderCount > 0",
+        "title": "Open Monthly Note"
       }
     ],
     "keybindings": [
@@ -24,6 +34,16 @@
         "command": "eznotes.openDailyNote",
         "when": "workspaceFolderCount > 0",
         "key": "alt+d"
+      },
+      {
+        "command": "eznotes.openWeeklyNote",
+        "when": "workspaceFolderCount > 0",
+        "key": "alt+w"
+      },
+      {
+        "command": "eznotes.openMonthlyNote",
+        "when": "workspaceFolderCount > 0",
+        "key": "alt+m"
       }
     ],
     "configuration": {
@@ -33,6 +53,18 @@
         "ezNotes.dailyNotesPath": {
           "type": "string",
           "default": "notes/{yyyy}/{MM}/{dd}.md",
+          "description": "Set Daily Notes Path",
+          "markdownDescription": "Use `{yyyy}` for year, `{MM}` for month, `{dd}` for day amd `{quarter}` for quarter."
+        },
+        "ezNotes.weeklyNotesPath": {
+          "type": "string",
+          "default": "notes/{yyyy}/Weekly/Week {WW}.md",
+          "description": "Set Daily Notes Path",
+          "markdownDescription": "Use `{yyyy}` for year, `{MM}` for month, `{dd}` for day amd `{quarter}` for quarter."
+        },
+        "ezNotes.monthlyNotesPath": {
+          "type": "string",
+          "default": "notes/{yyyy}/{MM}.md",
           "description": "Set Daily Notes Path",
           "markdownDescription": "Use `{yyyy}` for year, `{MM}` for month, `{dd}` for day amd `{quarter}` for quarter."
         },
