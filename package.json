@@ -3,6 +3,7 @@
   "displayName": "ezNotes",
   "description": "",
   "version": "0.0.1",
+  "publisher": "minerop",
   "engines": {
     "vscode": "^1.106.1"
   },
