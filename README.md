@@ -39,8 +39,6 @@ Paths and template contents support the following date replacement patterns:
 - `{dd}`: 2-digit day (e.g., 01, 31)
 - `{d}`: 1 or 2-digit day (e.g., 1, 31)
 
-## Following extension guidelines
+## Publishing and updating
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-- [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+<https://code.visualstudio.com/api/working-with-extensions/publishing-extension>
