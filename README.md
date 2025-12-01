@@ -9,6 +9,7 @@ Works good in combination with `foam.foam-vscode` and tries to replace and impro
 - Create daily notes based on a template.
 - Navigate to today's note quickly.
 - Customizable note storage location.
+- Post-creation & update commands for further automation.
 
 ## Extension Settings
 

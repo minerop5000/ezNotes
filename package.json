@@ -72,6 +72,36 @@
           "type": "string",
           "default": ".ezNotes",
           "description": "Template folder path for new notes"
+        },
+        "ezNotes.dailyPostCreateCommand": {
+          "type": "string",
+          "default": "",
+          "description": "Command to run after creating a daily note"
+        },
+        "ezNotes.weeklyPostCreateCommand": {
+          "type": "string",
+          "default": "",
+          "description": "Command to run after creating a weekly note"
+        },
+        "ezNotes.monthlyPostCreateCommand": {
+          "type": "string",
+          "default": "",
+          "description": "Command to run after creating a monthly note"
+        },
+        "ezNotes.dailyPostSwitchCommand": {
+          "type": "string",
+          "default": "",
+          "description": "Command to run after switching to an existing daily note (can be used for updating file)"
+        },
+        "ezNotes.weeklyPostSwitchCommand": {
+          "type": "string",
+          "default": "",
+          "description": "Command to run after switching to an existing weekly note (can be used for updating file)"
+        },
+        "ezNotes.monthlyPostSwitchCommand": {
+          "type": "string",
+          "default": "",
+          "description": "Command to run after switching to an existing monthly note (can be used for updating file)"
         }
       }
     }

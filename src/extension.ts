@@ -25,7 +25,7 @@ export function activate(context: vscode.ExtensionContext) {
         return;
       }
 
-      activateRecurringCommand(RecurringType.Daily, cfgPath, context);
+      activateRecurringCommand(RecurringType.Daily, cfgPath);
     }
   );
   context.subscriptions.push(disposableDaily);
@@ -44,7 +44,7 @@ export function activate(context: vscode.ExtensionContext) {
         return;
       }
 
-      activateRecurringCommand(RecurringType.Weekly, cfgPath, context);
+      activateRecurringCommand(RecurringType.Weekly, cfgPath);
     }
   );
   context.subscriptions.push(disposableWeekly);
@@ -63,7 +63,7 @@ export function activate(context: vscode.ExtensionContext) {
         return;
       }
 
-      activateRecurringCommand(RecurringType.Monthly, cfgPath, context);
+      activateRecurringCommand(RecurringType.Monthly, cfgPath);
     }
   );
   context.subscriptions.push(disposableMonthly);
