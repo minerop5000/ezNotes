@@ -2,10 +2,10 @@
   "name": "eznotes",
   "displayName": "ezNotes",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "minerop",
   "engines": {
-    "vscode": "^1.106.1"
+    "vscode": "^1.100.0"
   },
   "categories": [
     "Other"
@@ -119,7 +119,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.106.1",
+    "@types/vscode": "^1.100.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "24.x",
     "typescript-eslint": "^8.48.0",
